@@ -1,0 +1,27 @@
+{
+  "name": "@onehox/redis-via-socket",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "clean": "del-cli ./build/*",
+    "build": "npm run clean && tsc",
+    "pub": "npm version patch && npm run build && npm publish --access public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.0.4",
+    "del-cli": "^5.0.0"
+  }
+}
